@@ -26,7 +26,6 @@ export default class App extends Component {
 		this.state = { isLoggedIn: null };
 	}
 	componentWillMount() {
-		console.log(API_KEY)
 		// Initialize Firebase
 		firebase.initializeApp({
 			apiKey: API_KEY,
@@ -65,7 +64,7 @@ export default class App extends Component {
 					</Cardsection>)
 		}
 	}
-	render() {
+	render () {
 		console.log({State: this.state})
 		return (
 			<View>
